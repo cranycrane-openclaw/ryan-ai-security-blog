@@ -13,14 +13,14 @@
       "id": "topic-001",
       "slug": "zero-trust-for-ai-agents",
       "title": "Zero Trust for AI Agents: Practical Baseline",
-      "status": "queued",
+      "status": "researched",
       "owner": "andrea",
       "priority": "high",
-      "researchFile": "",
+      "researchFile": "automation/pipeline/research/2026-03-06-zero-trust-for-ai-agents.research.md",
       "draftFile": "",
       "finalFile": "",
       "publishedPost": "",
-      "updatedAt": ""
+      "updatedAt": "2026-03-06T19:28:00Z"
     }
   ]
 }
