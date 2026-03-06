@@ -15,6 +15,8 @@ This is the operational contract so everyone knows what to do without ad-hoc coo
 
 If these conflict, update `state.json` first and regenerate daily task.
 
+Daily generation is automated by GitHub Actions (`editorial-daily.yml`).
+
 ## Handoff contract
 
 - Andrea outputs: `research/*.research.md`

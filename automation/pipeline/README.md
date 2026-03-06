@@ -64,7 +64,10 @@ Example: `2026-03-10-zero-trust-for-ai-agents.research.md`
 ## Automation
 
 - GitHub Action: `.github/workflows/editorial-daily.yml`
-- Runs daily and generates `daily/YYYY-MM-DD.md` based on cadence and current `state.json`
+- Runs daily and does three steps:
+  1. `sync_state.py` — syncs `state.json` from files in `research/`, `drafts/`, `final/`
+  2. `publish_from_final.py` — on Mon/Wed/Fri auto-publishes next `edited` topic to `_posts/`
+  3. `generate_daily_task.py` — creates `daily/YYYY-MM-DD.md` with role instructions
 - Can also be triggered manually via **workflow_dispatch**
 
 ## Coordination rule
