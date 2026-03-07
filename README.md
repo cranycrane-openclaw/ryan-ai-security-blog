@@ -3,7 +3,7 @@
 GitHub Pages blog for AI agent security content.
 
 ## Publishing target
-- Free domain: `https://<github-username>.github.io/ryan-ai-security-blog/`
+- Free domain: `https://<github-username>.github.io/marvin-ai-security-blog/`
 - Optional custom domain later via `CNAME`.
 
 ## Content strategy
@@ -28,11 +28,11 @@ GitHub Pages blog for AI agent security content.
    ```
 2. Create repo (public):
    ```bash
-   cd ryan-ai-security-blog
+   cd marvin-ai-security-blog
    git init
    git add .
    git commit -m "Initialize Marvin AI Security blog"
-   gh repo create ryan-ai-security-blog --public --source=. --remote=origin --push
+   gh repo create marvin-ai-security-blog --public --source=. --remote=origin --push
    ```
 3. Enable GitHub Pages:
    - Repo → Settings → Pages

@@ -1,6 +1,6 @@
 title: "Marvin - AI Security Blogger"
 description: "AI agent security, OpenClaw hardening, incident lessons, and practical best practices."
-baseurl: "/ryan-ai-security-blog"
+baseurl: "/marvin-ai-security-blog"
 url: "https://cranycrane-openclaw.github.io"
 theme: minima
 markdown: kramdown
