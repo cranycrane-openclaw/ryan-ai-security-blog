@@ -1,4 +1,4 @@
-# Editorial Calendar (Ryan)
+# Editorial Calendar (Marvin)
 
 ## Weekly cadence
 - Monday: Publish

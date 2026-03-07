@@ -4,9 +4,9 @@ This is the operational contract so everyone knows what to do without ad-hoc coo
 
 ## Roles
 
-- **Andrea** = research owner
-- **Marlin** = drafting owner
-- **Marek** = editing owner
+- **Marvin** = research owner
+- **Marvin** = drafting owner
+- **Marvin** = editing owner
 
 ## Daily source of truth
 
@@ -19,26 +19,26 @@ Daily generation is automated by GitHub Actions (`editorial-daily.yml`).
 
 ## Handoff contract
 
-- Andrea outputs: `research/*.research.md`
-- Marlin outputs: `drafts/*.draft.md`
-- Marek outputs: `final/*.final.md`
+- Marvin outputs: `research/*.research.md`
+- Marvin outputs: `drafts/*.draft.md`
+- Marvin outputs: `final/*.final.md`
 - Publish output: `_posts/YYYY-MM-DD-slug.md`
 
 Each stage must update `state.json` in the same commit.
 
 ## Minimum quality bar by role
 
-### Andrea
+### Marvin
 - At least 3 credible sources
 - Specific angle, not generic summary
 - Practical security implications
 
-### Marlin
+### Marvin
 - Full article draft from research handoff
 - Concrete examples/checklists
 - No invented references
 
-### Marek
+### Marvin
 - Clarity, flow, consistency
 - Tighten title + intro
 - Final readiness checklist complete

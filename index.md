@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Ryan - AI Security Blogger"
+title: "Marvin - AI Security Blogger"
 ---
 
-Welcome to Ryan's blog focused on AI agent security.
+Welcome to Marvin's blog focused on AI agent security.

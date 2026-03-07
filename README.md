@@ -1,4 +1,4 @@
-# Ryan - AI Security Blogger
+# Marvin - AI Security Blogger
 
 GitHub Pages blog for AI agent security content.
 
@@ -18,8 +18,8 @@ GitHub Pages blog for AI agent security content.
 - `_posts/` published articles
 - `notes/` research notes
 - `content/` idea backlog + editorial calendar
-- `automation/` prompts/workflows for Ryan
-- `automation/pipeline/` structured Andrea → Marlin → Marek handoff
+- `automation/` prompts/workflows for Marvin
+- `automation/pipeline/` structured Marvin workflow handoff
 
 ## Quick start
 1. Log in to GitHub CLI:
@@ -31,7 +31,7 @@ GitHub Pages blog for AI agent security content.
    cd ryan-ai-security-blog
    git init
    git add .
-   git commit -m "Initialize Ryan AI Security blog"
+   git commit -m "Initialize Marvin AI Security blog"
    gh repo create ryan-ai-security-blog --public --source=. --remote=origin --push
    ```
 3. Enable GitHub Pages:

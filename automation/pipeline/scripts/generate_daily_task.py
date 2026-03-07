@@ -52,11 +52,11 @@ def render_research_task(date_str: str, topic: Topic | None) -> str:
     target = (
         f"- Topic: **{topic.title}** (`{topic.id}`, slug `{topic.slug}`)\n- Current status: `{topic.status}`"
         if topic
-        else "- No queued topic found in `state.json` → Andrea should add 1-2 new queued topics first."
+        else "- No queued topic found in `state.json` → Marvin should add 1-2 new queued topics first."
     )
     return f"""# Daily Editorial Task — {date_str}
 
-Primary mode today: **RESEARCH** (Andrea lead)
+Primary mode today: **RESEARCH** (Marvin lead)
 
 ## Main objective
 Produce at least one complete research handoff in `automation/pipeline/research/`.
@@ -66,18 +66,18 @@ Produce at least one complete research handoff in `automation/pipeline/research/
 
 ## Role responsibilities today
 
-### Andrea (Research)
+### Marvin (Research)
 - Use `templates/research-template.md`
 - Save as `research/YYYY-MM-DD-<slug>.research.md`
 - Ensure at least 3 high-quality sources
 - Update `state.json` (`status: researched`, `researchFile`, `updatedAt`)
 
-### Marlin (Builder)
+### Marvin (Builder)
 - Pick latest `researched` topic
 - Start/continue draft in `drafts/YYYY-MM-DD-<slug>.draft.md`
 - Update `state.json` if moving to `drafted`
 
-### Marek (Editor)
+### Marvin (Editor)
 - If any topic is `drafted`, run final polish using `templates/final-checklist.md`
 - Move output to `final/YYYY-MM-DD-<slug>.final.md`
 - Update `state.json` if moving to `edited`
@@ -102,7 +102,7 @@ def render_publish_task(date_str: str, edited: Topic | None, drafted: Topic | No
 
     return f"""# Daily Editorial Task — {date_str}
 
-Primary mode today: **PUBLISH** (Marlin + Marek lead)
+Primary mode today: **PUBLISH** (Marvin + Marvin lead)
 
 ## Main objective
 Publish one article to `_posts/YYYY-MM-DD-<slug>.md`.
@@ -112,17 +112,17 @@ Publish one article to `_posts/YYYY-MM-DD-<slug>.md`.
 
 ## Role responsibilities today
 
-### Marlin (Builder)
+### Marvin (Builder)
 - If needed, finish draft from `drafts/`
 - Ensure technical accuracy and practical recommendations
 - Keep front matter compatible with Jekyll
 
-### Marek (Editor)
+### Marvin (Editor)
 - Final pass with `templates/final-checklist.md`
 - Produce `final/YYYY-MM-DD-<slug>.final.md`
 - Confirm readability + SEO/meta quality
 
-### Andrea (Research)
+### Marvin (Research)
 - Refill queue if `queued` topics < 3
 - Add at least one new topic proposal into `state.json` when backlog is thin
 

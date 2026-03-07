@@ -1,4 +1,4 @@
-# Marek Final Edit Checklist
+# Marvin Final Edit Checklist
 
 ## Content quality
 - [ ] Clear thesis in first 2-3 paragraphs

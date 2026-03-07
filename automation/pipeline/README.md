@@ -1,4 +1,4 @@
-# Editorial Pipeline (Andrea → Marlin → Marek)
+# Editorial Pipeline (Marvin workflow)
 
 This pipeline is designed for the weekly cadence:
 
@@ -12,13 +12,13 @@ This pipeline is designed for the weekly cadence:
 
 ## Directories
 
-- `research/` — handoff files prepared by **Andrea**
-- `drafts/` — article drafts prepared by **Marlin**
-- `final/` — final edited articles prepared by **Marek**
+- `research/` — handoff files prepared by **Marvin**
+- `drafts/` — article drafts prepared by **Marvin**
+- `final/` — final edited articles prepared by **Marvin**
 - `templates/` — markdown templates for each stage
 - `daily/` — auto-generated daily task cards
 - `state.json` — queue + status tracking
-- `agents-playbook.md` — role contract for Andrea/Marlin/Marek
+- `agents-playbook.md` — role contract for Marvin
 
 ## File naming
 
@@ -33,19 +33,19 @@ Example: `2026-03-10-zero-trust-for-ai-agents.research.md`
 ## Workflow
 
 1. **Research day (Tue/Thu/Sat/Sun)**
-   - Andrea picks the next queued topic from `state.json`.
-   - Andrea writes research note using `templates/research-template.md`.
-   - Andrea sets topic status to `researched` and writes `researchFile` path.
+   - Marvin picks the next queued topic from `state.json`.
+   - Marvin writes research note using `templates/research-template.md`.
+   - Marvin sets topic status to `researched` and writes `researchFile` path.
 
 2. **Drafting**
-   - Marlin picks a `researched` topic.
-   - Marlin writes full draft using `templates/draft-template.md`.
-   - Marlin sets status to `drafted` and writes `draftFile` path.
+   - Marvin picks a `researched` topic.
+   - Marvin writes full draft using `templates/draft-template.md`.
+   - Marvin sets status to `drafted` and writes `draftFile` path.
 
 3. **Editing**
-   - Marek picks a `drafted` topic.
-   - Marek edits and finalizes with `templates/final-checklist.md`.
-   - Marek sets status to `edited` and writes `finalFile` path.
+   - Marvin picks a `drafted` topic.
+   - Marvin edits and finalizes with `templates/final-checklist.md`.
+   - Marvin sets status to `edited` and writes `finalFile` path.
 
 4. **Publish day (Mon/Wed/Fri)**
    - Publish next `edited` topic into `_posts/YYYY-MM-DD-<slug>.md`.
@@ -64,9 +64,9 @@ Example: `2026-03-10-zero-trust-for-ai-agents.research.md`
 ## Automation
 
 - OpenClaw cron jobs trigger agents daily:
-  - `ryan-research-days` (Tue/Thu/Sat/Sun 08:15 Europe/Prague)
-  - `ryan-publish-days-builder` (Mon/Wed/Fri 08:20 Europe/Prague)
-  - `ryan-publish-days-editor` (Mon/Wed/Fri 08:30 Europe/Prague)
+  - `marvin-research-days` (Tue/Thu/Sat/Sun 08:15 Europe/Prague)
+  - `marvin-publish-days-builder` (Mon/Wed/Fri 08:20 Europe/Prague)
+  - `marvin-publish-days-editor` (Mon/Wed/Fri 08:30 Europe/Prague)
 - GitHub Action: `.github/workflows/editorial-daily.yml` (09:05 UTC daily)
 - Runs daily and does three steps:
   1. `sync_state.py` — syncs `state.json` from files in `research/`, `drafts/`, `final/`
@@ -77,4 +77,4 @@ Example: `2026-03-10-zero-trust-for-ai-agents.research.md`
 ## Coordination rule
 
 Every stage must update `state.json` in the same commit as its content file.
-This ensures Marlin can always pick up Andrea's latest research without ambiguity.
+This ensures Marvin can always pick up Marvin's latest research without ambiguity.
