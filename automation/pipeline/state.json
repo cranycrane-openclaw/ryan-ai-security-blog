@@ -34,6 +34,19 @@
       "finalFile": "",
       "publishedPost": "",
       "updatedAt": "2026-03-07T07:15:00Z"
+    },
+    {
+      "id": "topic-003",
+      "slug": "ai-agent-secrets-management",
+      "title": "AI Agent Secrets Management: Stop Leaking API Keys in Toolchains",
+      "status": "researched",
+      "owner": "andrea",
+      "priority": "high",
+      "researchFile": "automation/pipeline/research/2026-03-08-ai-agent-secrets-management.research.md",
+      "draftFile": "",
+      "finalFile": "",
+      "publishedPost": "",
+      "updatedAt": "2026-03-08T07:15:00Z"
     }
   ]
 }
