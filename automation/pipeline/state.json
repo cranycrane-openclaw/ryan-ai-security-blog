@@ -13,15 +13,15 @@
       "id": "topic-001",
       "slug": "zero-trust-for-ai-agents",
       "title": "Zero Trust for AI Agents: Practical Baseline",
-      "status": "drafted",
+      "status": "edited",
       "owner": "andrea",
       "priority": "high",
       "researchFile": "automation/pipeline/research/2026-03-06-zero-trust-for-ai-agents.research.md",
       "draftFile": "automation/pipeline/drafts/2026-03-09-zero-trust-for-ai-agents.draft.md",
-      "finalFile": "",
+      "finalFile": "automation/pipeline/final/2026-03-09-zero-trust-for-ai-agents.final.md",
       "publishedPost": "",
-      "updatedAt": "2026-03-09T07:20:00Z"
-    },
+      "updatedAt": "2026-03-09T07:30:00Z"
+    }
     {
       "id": "topic-002",
       "slug": "secure-mcp-integrations",
