@@ -21,7 +21,7 @@
       "finalFile": "automation/pipeline/final/2026-03-09-zero-trust-for-ai-agents.final.md",
       "publishedPost": "",
       "updatedAt": "2026-03-09T07:30:00Z"
-    }
+    },
     {
       "id": "topic-002",
       "slug": "secure-mcp-integrations",
@@ -47,6 +47,19 @@
       "finalFile": "",
       "publishedPost": "",
       "updatedAt": "2026-03-08T07:15:00Z"
+    },
+    {
+      "id": "topic-004",
+      "slug": "openclaw-prompt-injection-defense-in-depth",
+      "title": "OpenClaw Prompt Injection Defense in Depth",
+      "status": "researched",
+      "owner": "andrea",
+      "priority": "high",
+      "researchFile": "automation/pipeline/research/2026-03-10-openclaw-prompt-injection-defense-in-depth.research.md",
+      "draftFile": "",
+      "finalFile": "",
+      "publishedPost": "",
+      "updatedAt": "2026-03-10T07:15:00Z"
     }
   ]
 }
