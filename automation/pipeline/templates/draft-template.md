@@ -8,20 +8,28 @@ author: marlin
 source_research: automation/pipeline/research/YYYY-MM-DD-your-topic-slug.research.md
 ---
 
-## Why this matters
+## Why this matters now
 
-## Core problem
+## Threat model or incident context
 
-## Practical framework
+## Deep technical breakdown
 
-## Real-world implementation notes
+## Step-by-step implementation guide
 
-## Common mistakes
+## Anti-patterns (what not to do)
 
-## Quick checklist
+## Quick wins in 24 hours
 - [ ]
 - [ ]
 - [ ]
+
+## Full team checklist
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+## Lessons learned / next steps
 
 ## Final recommendation
 

@@ -15,14 +15,21 @@ status: researched
 ## Problem statement
 - What practical security problem does this article solve?
 
-## Key takeaways (5-7)
+## Key takeaways (7-10)
 - 
 - 
 - 
 
-## Proposed structure
-- H2:
-  - H3:
+## Proposed long-form structure (target 1800-2500 words)
+- H2: Hook / why now
+- H2: Threat model or incident context
+- H2: Deep technical breakdown
+  - H3: Architecture / attack surface details
+  - H3: Failure modes / abuse paths
+- H2: Step-by-step implementation guide
+- H2: Anti-patterns / what not to do
+- H2: Practical checklist (quick wins in 24h)
+- H2: Lessons learned + CTA
 
 ## Evidence and sources
 - <url> — why this is credible/relevant

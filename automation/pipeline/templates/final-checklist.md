@@ -2,9 +2,11 @@
 
 ## Content quality
 - [ ] Clear thesis in first 2-3 paragraphs
+- [ ] Target length is 1800-2500 words (deep-dive format)
 - [ ] No fluff; each section adds practical value
 - [ ] Claims are backed by sources from research note
 - [ ] Balanced tone (confident, not alarmist)
+- [ ] Includes at least one concrete case study or incident thread
 
 ## Readability
 - [ ] Strong section titles
