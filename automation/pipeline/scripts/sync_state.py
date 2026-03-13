@@ -31,6 +31,10 @@ def main() -> None:
         if not slug:
             continue
 
+        # Hard lock: once published, never move status backward/forward from file discovery.
+        if topic.get("status") == "published":
+            continue
+
         research = latest_match(PIPELINE / "research", ".research.md", slug)
         draft = latest_match(PIPELINE / "drafts", ".draft.md", slug)
         final = latest_match(PIPELINE / "final", ".final.md", slug)

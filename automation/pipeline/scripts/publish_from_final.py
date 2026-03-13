@@ -35,9 +35,23 @@ def main() -> None:
     topics = state.get("topics", [])
     target = None
     for t in topics:
-        if t.get("status") == "edited":
-            target = t
-            break
+        if t.get("status") != "edited":
+            continue
+        slug = t.get("slug", "untitled")
+        already_published = any(POSTS_DIR.glob(f"*-{slug}.md"))
+        if already_published:
+            # Lock state if file already exists to prevent duplicate publishes.
+            existing = sorted(POSTS_DIR.glob(f"*-{slug}.md"))[-1]
+            t["status"] = "published"
+            t["publishedPost"] = str(existing.relative_to(ROOT))
+            t["updatedAt"] = iso_now()
+            with STATE_PATH.open("w", encoding="utf-8") as f:
+                json.dump(state, f, ensure_ascii=False, indent=2)
+                f.write("\n")
+            print(f"skip publish: slug already exists at {existing}")
+            return
+        target = t
+        break
 
     if not target:
         print("no edited topic to publish")
