@@ -73,6 +73,19 @@
       "finalFile": "",
       "publishedPost": "",
       "updatedAt": "2026-03-14T07:15:00Z"
+    },
+    {
+      "id": "topic-006",
+      "slug": "agent-memory-poisoning-and-rag-data-integrity",
+      "title": "Agent Memory Poisoning and RAG Data Integrity: How to Stop Slow-Burn Compromise",
+      "status": "researched",
+      "owner": "andrea",
+      "priority": "high",
+      "researchFile": "automation/pipeline/research/2026-03-15-agent-memory-poisoning-and-rag-data-integrity.research.md",
+      "draftFile": "",
+      "finalFile": "",
+      "publishedPost": "",
+      "updatedAt": "2026-03-15T08:03:00Z"
     }
   ]
 }
